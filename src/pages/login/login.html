@@ -1,0 +1,20 @@
+<ion-content padding>
+  <h2>Please, Login</h2>
+  <form (submit)="doLogin()">
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input [(ngModel)]="loginData.password" name="password" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <button ion-button block type="submit">
+      Login
+    </button>
+  </form>
+
+  <button ion-button block clear (click)="register()">
+    No have an account? Register Now
+  </button>
+</ion-content>
